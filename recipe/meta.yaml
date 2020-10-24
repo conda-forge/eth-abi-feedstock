@@ -28,7 +28,6 @@ requirements:
 test:
   imports:
     - eth_abi
-    - eth_abi.tools
   commands:
     - pip check
   requires:
