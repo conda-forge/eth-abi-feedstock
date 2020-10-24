@@ -11,7 +11,7 @@ source:
   sha256: 4bb1d87bb6605823379b07f6c02c8af45df01a27cc85bd6abb7cf1446ce7d188
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -24,12 +24,10 @@ requirements:
     - eth-utils >=1.2.0,<2.0.0
     - parsimonious >=0.8.0,<0.9.0
     - python >=3.6,<4.0
-    - hypothesis >=3.6.1,<5
 
 test:
   imports:
     - eth_abi
-    - eth_abi.tools
   commands:
     - pip check
   requires:

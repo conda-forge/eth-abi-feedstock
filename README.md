@@ -5,11 +5,9 @@ Home: https://github.com/ethereum/eth-abi
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eth-abi-feedstock/blob/master/LICENSE.txt)
 
 Summary: eth_abi: Python utilities for working with Ethereum ABI definitions, especially encoding and decoding
-
-
 
 Current build status
 ====================
