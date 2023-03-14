@@ -1,5 +1,5 @@
 {% set name = "eth-abi" %}
-{% set version = "3.0.1" %}
+{% set version = "4.0.0b2" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/eth_abi-{{ version }}.tar.gz
-  sha256: c3872e3ac1e9ef3f8c6599aaca4ee536d536eefca63a6892ab937f0560edb656
+  sha256: 0cbd5a854acf101843d3f009b10a8b63050125981211ea4d074a80eb953f97ab
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,8 +21,8 @@ requirements:
     - python >=3.6,<4.0
     - setuptools
   run:
-    - eth-typing >=3.0.0,<4.0.0
-    - eth-utils >=2.0.0,<3.0.0
+    - eth-typing >=3.0.0
+    - eth-utils >=2.0.0
     - parsimonious >=0.8.0,<0.10.0
     - setuptools
     - python >=3.6,<4.0
