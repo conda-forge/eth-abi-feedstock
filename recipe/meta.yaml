@@ -1,5 +1,5 @@
 {% set name = "eth-abi" %}
-{% set version = "4.2.0" %}
+{% set version = "4.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/eth_abi-{{ version }}.tar.gz
-  sha256: a9adae5e0c2b9a35703b76856d6db3a0498effdf1243011b2d56280165db1cdd
+  sha256: 60d88788d53725794cdb07c0f0bb0df2a31a6e1ad19644313fe6117ac24eeeb0
 
 build:
   number: 0
