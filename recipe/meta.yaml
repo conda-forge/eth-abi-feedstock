@@ -11,7 +11,7 @@ source:
   sha256: e83a0ed91f2dadeeb50236d673736fe2edc6fcc0a1c1e13d461192d4b23d5bcc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -33,6 +33,8 @@ test:
     - python {{ python_min }}
   imports:
     - eth_abi
+  commands:
+    - python -c "import importlib.metadata as m; assert m.version('eth_abi') == '{{ version }}', m.version('eth_abi')"
 
 about:
   home: https://github.com/ethereum/eth-abi
